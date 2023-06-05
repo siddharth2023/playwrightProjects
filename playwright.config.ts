@@ -20,14 +20,15 @@ export default defineConfig<TestOptions>({
   },
   /* Configure projects for major browsers */
   projects: [
- 
+    { name: "setup", testMatch: /.*\.setup\.ts/ },
+
     {
       name: "duckduck",
       use: {
         ...devices["Desktop Chrome"],
         person: "https://duck.com",
         baseURL: "https://spreadprivacy.com/",
-        userName: 'a',
+        userName: "a",
       },
     },
     {
@@ -36,7 +37,7 @@ export default defineConfig<TestOptions>({
         ...devices["Desktop Chrome"],
         person: "https://wikipedia.org",
         baseURL: "https://en.wikipedia.org/wiki/Main_Page",
-        userName: 'a',
+        userName: "a",
       },
     },
   ],

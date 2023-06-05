@@ -8,6 +8,7 @@ export const test = base.extend<TestOptions>({
   // Define an option and provide a default value.
   // We can later override it in the config.
   person: ["https://github.com", { option: true }],
+  userName: ["https://github.com", { option: true }],
   // Override default "page" fixture.
   page: async ({ page, baseURL, person, userName }, use) => {
     // await page.pause();
