@@ -11,7 +11,6 @@ export const test = base.extend<TestOptions>({
   userName: ["https://github.com", { option: true }],
   // Override default "page" fixture.
   page: async ({ page, baseURL, person, userName }, use) => {
-    // await page.pause();
     // baseURL = process.env.CI
     //   ? ${process.env.BASE_URL}
     //   : "https://playwright.dev/";
@@ -21,7 +20,5 @@ export const test = base.extend<TestOptions>({
     // Each test will get a "page" that already has the person name.
     await use(page);
     // set login storage
-
-    await page.pause();
   },
 });

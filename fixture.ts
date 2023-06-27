@@ -44,7 +44,6 @@ export const test = base.extend<
       // const account = await acquireAccount(id);
 
       // Perform authentication steps. Replace these actions with your own.
-      await page.pause();
       await page.goto("https://github.com/login");
       await page.getByLabel("Username or email address").fill("username");
       await page.getByLabel("Password").fill("password");

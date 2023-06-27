@@ -3,7 +3,6 @@ import { test } from "./my-test";
 // import { test } from "./../fixture";
 
 test("test 1", async ({ page, person, baseURL, userName }) => {
-  await page.pause();
   if (baseURL.includes("wiki")) {
     await page.getByPlaceholder("Search Wikipedia").click();
     await page.getByPlaceholder("Search Wikipedia").fill("apple");
