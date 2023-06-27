@@ -20,5 +20,8 @@ export const test = base.extend<TestOptions>({
     console.log(person);
     // Each test will get a "page" that already has the person name.
     await use(page);
+    // set login storage
+
+    await page.pause();
   },
 });

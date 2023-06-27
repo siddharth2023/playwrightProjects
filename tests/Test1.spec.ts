@@ -8,7 +8,7 @@ test("test 1", async ({ page, person, baseURL, userName }) => {
     await page.getByPlaceholder("Search Wikipedia").click();
     await page.getByPlaceholder("Search Wikipedia").fill("apple");
   }
-  if (baseURL.includes("speed")) {
+  if (baseURL.includes("spread")) {
     await page.getByRole("link", { name: "Device Privacy Tips" }).click();
     await page.getByRole("heading", { name: "Device Privacy Tips" }).click();
     await page
@@ -17,6 +17,4 @@ test("test 1", async ({ page, person, baseURL, userName }) => {
       .click();
     await page.getByRole("heading", { name: "Crash Course" }).click();
   }
-  console.log(baseURL);
-  console.log(baseURL);
 });
