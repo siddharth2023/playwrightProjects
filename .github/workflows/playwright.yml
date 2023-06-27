@@ -20,8 +20,8 @@ jobs:
       run: npx playwright install --with-deps
     - name: Run Playwright tests
       run: npm run run:duckduck
-      # env:
-      #     WORKERS: ${{vars.WORKERS}}
+      env:
+          WORKERS: ${{vars.WORKERS}}
     - uses: actions/upload-artifact@v3
       if: always()
       with:
