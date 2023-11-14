@@ -35,6 +35,7 @@ export const test = base.extend<
         // "--use-fake-ui-for-media-stream",
         "--use-file-for-fake-video-capture=sample_video.y4m",
       ],
+      ignoreDefaultArgs: ["--enable-automation"],
     });
 
     await context.grantPermissions(["camera", "microphone"]);

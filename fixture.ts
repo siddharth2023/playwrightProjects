@@ -84,6 +84,7 @@ export const test = base.extend<
         "--auto-accept-camera-and-microphone-capture",
         "-use-fake-device-for-media-stream",
       ],
+      ignoreDefaultArgs: ["--enable-automation"],
     });
     await context.grantPermissions(["camera", "microphone"]);
     await use(context);

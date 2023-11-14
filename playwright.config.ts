@@ -1,5 +1,5 @@
 import { defineConfig, devices } from "@playwright/test";
-import type { TestOptions } from "./tests/my-test";
+import type { TestOptions } from "./tests/testFixture";
 
 export default defineConfig<TestOptions>({
   testDir: "./tests",
