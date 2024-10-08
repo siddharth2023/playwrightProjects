@@ -1,7 +1,6 @@
-import { test } from "./testFixture";
+import { test } from "@fixtures/testFixture";
 
 import { expect } from "@playwright/test";
-import { error } from "console";
 
 // test.describe.configure({ mode: 'serial' });
 test.describe("A", () => {

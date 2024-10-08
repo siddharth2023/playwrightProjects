@@ -1,4 +1,4 @@
-import { test } from "./testFixture";
+import { test } from "@fixtures/testFixture";
 // import { test } from "./../fixture";
 
 test("Video tests", async ({ page, baseURL, person, userName }) => {

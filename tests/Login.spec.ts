@@ -1,4 +1,4 @@
-import { test } from "./testFixture";
+import { test } from "@fixtures/testFixture";
 
 test("Login ", async ({ page }) => {
   await page.goto("https://www.w3schools.com/howto/howto_css_login_form.asp");
