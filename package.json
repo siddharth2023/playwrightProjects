@@ -3,22 +3,29 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "runTest": "npx playwright test",
     "ui": "npx playwright test --ui",
     "run:duckduck": "npx playwright test --project=duckduck",
     "run:wiki": "npx playwright test --project=wiki",
-    "playwright:report": "npx playwright show-report test-results/html"
+    "playwright:report": "npx playwright show-report test-results/html",
+    "code:eslintActions": "npx eslint '**/*.ts'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.39.0",
-    "@types/node": "^20.9.0"
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.7.5"
   },
   "dependencies": {
-    "dotenv": "^16.3.1",
-    "typescript": "^5.2.2"
+    "@typescript-eslint/eslint-plugin": "^8.8.1",
+    "@typescript-eslint/parser": "^8.8.1",
+    "dotenv": "^16.4.5",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-playwright": "^1.6.2",
+    "eslint-plugin-react": "^7.37.1",
+    "typescript": "^5.6.2"
   }
 }

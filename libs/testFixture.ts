@@ -33,7 +33,7 @@ export const test = base.extend<
         "--auto-accept-camera-and-microphone-capture",
         "-use-fake-device-for-media-stream",
         // "--use-fake-ui-for-media-stream",
-        "--use-file-for-fake-video-capture=sample_video.y4m",
+        // "--use-file-for-fake-video-capture=/assets/sample_video.y4m",
       ],
       ignoreDefaultArgs: ["--enable-automation"],
     });
